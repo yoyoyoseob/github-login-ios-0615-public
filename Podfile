@@ -1,6 +1,9 @@
 platform :ios, '7.0'
 
 pod 'AFNetworking'
+
+pod 'AFOAuth2Manager'
+
 pod 'OHHTTPStubs'
 target 'github-repo-starringTests' do
   pod 'Specta',      '~> 0.2.1'

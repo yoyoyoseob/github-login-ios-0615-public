@@ -10,6 +10,8 @@
 	<string>github-repo-starring</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>2FBE0040F7FCC6BF93C7B231FAF3682212C6860A</key>
+		<string>github.com:yoyoyoseob/github-login-ios-0615.git</string>
 		<key>85AC71E9E94517CAAA09A1C5FAB166091B25D1E7</key>
 		<string>github.com:learn-co-curriculum/github-login.git</string>
 	</dict>
@@ -17,15 +19,17 @@
 	<string>github-repo-starring.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>85AC71E9E94517CAAA09A1C5FAB166091B25D1E7</key>
+		<key>2FBE0040F7FCC6BF93C7B231FAF3682212C6860A</key>
 		<string>..</string>
+		<key>85AC71E9E94517CAAA09A1C5FAB166091B25D1E7</key>
+		<string>../../github-login</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>github.com:learn-co-curriculum/github-login.git</string>
+	<string>github.com:yoyoyoseob/github-login-ios-0615.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>85AC71E9E94517CAAA09A1C5FAB166091B25D1E7</string>
+	<string>2FBE0040F7FCC6BF93C7B231FAF3682212C6860A</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>85AC71E9E94517CAAA09A1C5FAB166091B25D1E7</string>
 			<key>IDESourceControlWCCName</key>
 			<string>github-login</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2FBE0040F7FCC6BF93C7B231FAF3682212C6860A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>github-login-ios-0615</string>
 		</dict>
 	</array>
 </dict>

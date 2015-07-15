@@ -29,6 +29,7 @@
     }
     return self;
 }
+
 -(void)getRepositoriesWithCompletion:(void (^)(BOOL))completionBlock
 {
     [FISGithubAPIClient getRepositoriesWithCompletion:^(NSArray *repoDictionaries) {
@@ -43,7 +44,6 @@
 {
     [FISGithubAPIClient checkIfRepoIsStarredWithFullName:repo.fullName CompletionBlock:^(BOOL starred) {
 
-        NSLog(@"ASDF");
         if (starred) {
             [FISGithubAPIClient unstarRepoWithFullName:repo.fullName CompletionBlock:^{
                 completionBlock(NO);
@@ -56,4 +56,6 @@
         }
     }];
 }
+
+
 @end

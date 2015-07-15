@@ -49,9 +49,11 @@
 
 /* Begin PBXFileReference section */
 		1D9386AE5B2144E1AAB0E871 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AD5BB46394D476CB08B2204 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		45237E2B8370A9FF1460CD53 /* Pods-github-repo-starringTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-github-repo-starringTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-github-repo-starringTests/Pods-github-repo-starringTests.release.xcconfig"; sourceTree = "<group>"; };
+		50F318712AF456285296FBF3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		659AFE744F0AE96062A67803 /* Pods-github-repo-starringTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-github-repo-starringTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-github-repo-starringTests/Pods-github-repo-starringTests.debug.xcconfig"; sourceTree = "<group>"; };
+		78FAC70ABB7BF9B641F83771 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C162AE1AB9ED4995B090E11B /* libPods-github-repo-starringTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-github-repo-starringTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C46300762A4B4818B220BB09 /* Pods-github-repo-starringTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-github-repo-starringTests.xcconfig"; path = "Pods/Pods-github-repo-starringTests.xcconfig"; sourceTree = "<group>"; };
 		D82DB6BF1921613300FA0E08 /* not_starred.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = not_starred.json; sourceTree = "<group>"; };
 		D871AC9B19210D190029CCC8 /* github-repo-starring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "github-repo-starring.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D871AC9E19210D190029CCC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -114,6 +116,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		072DF8BD09658D70B9434F89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50F318712AF456285296FBF3 /* Pods.debug.xcconfig */,
+				78FAC70ABB7BF9B641F83771 /* Pods.release.xcconfig */,
+				659AFE744F0AE96062A67803 /* Pods-github-repo-starringTests.debug.xcconfig */,
+				45237E2B8370A9FF1460CD53 /* Pods-github-repo-starringTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		718FD87E1B55AE32009232FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D871ACDF19210DA00029CCC8 /* FISGithubRepository.h */,
+				D871ACE019210DA00029CCC8 /* FISGithubRepository.m */,
+				D871ACD519210D970029CCC8 /* FISConstants.h */,
+				D871ACD619210D970029CCC8 /* FISConstants.m */,
+				D871ACD719210D970029CCC8 /* FISGithubAPIClient.h */,
+				D871ACD819210D970029CCC8 /* FISGithubAPIClient.m */,
+				D871ACD919210D970029CCC8 /* FISReposDataStore.h */,
+				D871ACDA19210D970029CCC8 /* FISReposDataStore.m */,
+				D871ACAD19210D190029CCC8 /* FISAppDelegate.h */,
+				D871ACAE19210D190029CCC8 /* FISAppDelegate.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		718FD87F1B55AE3F009232FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D871ACE219210DAF0029CCC8 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		718FD8801B55AE46009232FD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D871ACD319210D970029CCC8 /* FISReposTableViewController.h */,
+				D871ACD419210D970029CCC8 /* FISReposTableViewController.m */,
+				D871ACB319210D190029CCC8 /* FISViewController.h */,
+				D871ACB419210D190029CCC8 /* FISViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		D871AC9219210D190029CCC8 = {
 			isa = PBXGroup;
 			children = (
@@ -121,8 +170,7 @@
 				D871ACC319210D190029CCC8 /* github-repo-starringTests */,
 				D871AC9D19210D190029CCC8 /* Frameworks */,
 				D871AC9C19210D190029CCC8 /* Products */,
-				9AD5BB46394D476CB08B2204 /* Pods.xcconfig */,
-				C46300762A4B4818B220BB09 /* Pods-github-repo-starringTests.xcconfig */,
+				072DF8BD09658D70B9434F89 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,21 +199,9 @@
 		D871ACA419210D190029CCC8 /* github-repo-starring */ = {
 			isa = PBXGroup;
 			children = (
-				D871ACD319210D970029CCC8 /* FISReposTableViewController.h */,
-				D871ACD419210D970029CCC8 /* FISReposTableViewController.m */,
-				D871ACD519210D970029CCC8 /* FISConstants.h */,
-				D871ACD619210D970029CCC8 /* FISConstants.m */,
-				D871ACD719210D970029CCC8 /* FISGithubAPIClient.h */,
-				D871ACD819210D970029CCC8 /* FISGithubAPIClient.m */,
-				D871ACD919210D970029CCC8 /* FISReposDataStore.h */,
-				D871ACDA19210D970029CCC8 /* FISReposDataStore.m */,
-				D871ACAD19210D190029CCC8 /* FISAppDelegate.h */,
-				D871ACAE19210D190029CCC8 /* FISAppDelegate.m */,
-				D871ACE219210DAF0029CCC8 /* Main.storyboard */,
-				D871ACB319210D190029CCC8 /* FISViewController.h */,
-				D871ACB419210D190029CCC8 /* FISViewController.m */,
-				D871ACDF19210DA00029CCC8 /* FISGithubRepository.h */,
-				D871ACE019210DA00029CCC8 /* FISGithubRepository.m */,
+				718FD8801B55AE46009232FD /* Controllers */,
+				718FD87F1B55AE3F009232FD /* Views */,
+				718FD87E1B55AE32009232FD /* Models */,
 				D871ACB619210D190029CCC8 /* Images.xcassets */,
 				D871ACA519210D190029CCC8 /* Supporting Files */,
 			);
@@ -320,7 +356,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-github-repo-starringTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-github-repo-starringTests/Pods-github-repo-starringTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A08F2F6E5F45493D8B0B7EDC /* Check Pods Manifest.lock */ = {
@@ -350,7 +386,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FA2D7ABCA9F44F2CB1540BAA /* Check Pods Manifest.lock */ = {
@@ -499,7 +535,7 @@
 		};
 		D871ACCE19210D190029CCC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AD5BB46394D476CB08B2204 /* Pods.xcconfig */;
+			baseConfigurationReference = 50F318712AF456285296FBF3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -513,7 +549,7 @@
 		};
 		D871ACCF19210D190029CCC8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AD5BB46394D476CB08B2204 /* Pods.xcconfig */;
+			baseConfigurationReference = 78FAC70ABB7BF9B641F83771 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -527,7 +563,7 @@
 		};
 		D871ACD119210D190029CCC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C46300762A4B4818B220BB09 /* Pods-github-repo-starringTests.xcconfig */;
+			baseConfigurationReference = 659AFE744F0AE96062A67803 /* Pods-github-repo-starringTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/github-repo-starring.app/github-repo-starring";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -550,7 +586,7 @@
 		};
 		D871ACD219210D190029CCC8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C46300762A4B4818B220BB09 /* Pods-github-repo-starringTests.xcconfig */;
+			baseConfigurationReference = 45237E2B8370A9FF1460CD53 /* Pods-github-repo-starringTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/github-repo-starring.app/github-repo-starring";
 				FRAMEWORK_SEARCH_PATHS = (

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-NSString *const GITHUB_API_URL;
+extern NSString *const GITHUB_API_URL;
 @interface FISGithubAPIClient : NSObject
 
 ///---------------------
